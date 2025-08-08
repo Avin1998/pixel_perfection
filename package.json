@@ -1,0 +1,19 @@
+{
+  "name": "pixel-perfection-tool",
+  "version": "1.0.0",
+  "description": "A tool for comparing UI implementations with original designs",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["design", "ui", "comparison", "pixel-perfect", "figma"],
+  "author": "Pixel Perfection Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
